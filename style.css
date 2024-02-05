@@ -19,6 +19,11 @@ body
 	color: #FFF1E4;
 }
 
+.banner
+{
+	max-width: 500px;
+}
+
 .buttons
 {
 	display: flex;
