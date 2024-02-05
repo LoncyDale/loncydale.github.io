@@ -16,6 +16,12 @@ for (let i = 0; i < sounds.length; i++)
 
 	buttons_block.appendChild(element);
 
-	document.getElementById(sounds[i]).textContent = sounds[i];
-	document.getElementById(sounds[i]).addEventListener("click", (e) => {new Audio(sounds[i] + ".mp3").play();});
+	document.getElementById(sounds[i]).textContent = '💩'; // sounds[i];
+	document.getElementById(sounds[i]).addEventListener("click", function()
+	{
+		new Audio(sounds[i] + ".mp3").play();
+	});
+	
 }
+
+// document.getElementById(sounds[i]).addEventListener("click", (e) => {new Audio(sounds[i] + ".mp3").play();});
