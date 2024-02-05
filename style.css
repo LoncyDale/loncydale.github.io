@@ -41,7 +41,7 @@ body
 	margin: 1rem;
 }
 
-.button
+.btn
 {
 	min-width: 100px;
 	min-height: 100px;
@@ -55,7 +55,7 @@ body
 	cursor: pointer;
 }
 
-.button:active
+.btn:active
 {
 	background-color:rgb(62,20,0,1);
 }
