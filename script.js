@@ -20,5 +20,3 @@ for (let i = 0; i < sounds.length; i++)
 		new Audio(sounds[i] + ".mp3").play();
 	});
 }
-
-// document.getElementById(sounds[i]).addEventListener("click", (e) => {new Audio(sounds[i] + ".mp3").play();});
