@@ -2,20 +2,17 @@
 {
 	margin: 0px;
 	padding: 0px;
-	
-	overflow: hidden;
 }
 
 body
 {
 	max-width: 100%;
 	width: 100vw;
-	min-height: 100vh;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 
 	background-color: #150802;
 
