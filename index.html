@@ -1,24 +1,53 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css">
+        <title>Mazes of Madness</title>
+    </head>
 
-	<title>Издаватель интересных звуков</title>
+    <body>
+        <div style="display:none"> <!-- Preload -->
+            <img src="textures/character_oleg.png">
+            <img src="textures/character_maximan.png">
+            <img src="textures/texture_wall-h.jpg">
+            <img src="textures/texture_wall-v.jpg">
+            <img src="textures/texture_stone.jpg">
+            <img src="textures/texture_room-floor.jpg">
+        </div>
+        
+        <div id="gameInfo">
+            <div id="timer"></div>
+            <div id="movesCounter"></div>
+        </div>
+        <div id="maze">
+            <canvas id="canvas" width="950" height="1450"> <!-- 523 523 -->
+                This text is displayed if your browser does not support HTML5 Canvas.
+            </canvas>
+        </div>
 
-	<link rel="stylesheet" href="style.css">
-</script>
-</head>
+        <!-- Modal fullscreen container, with dark BG -->
+        <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="gamehead"></h3>
+                </div>
+                <div class="modal-body">
+                    <div id="timeSpent"></div>
+                    <div id="movesSpent"></div>
+                    <div class="modal-button">
+                        <h2 id="replayButton" onmouseover="" style="cursor:pointer;">Play Again</h2>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <h2 id="replayButton" onmouseover="" style="cursor:pointer;">Play Again?</h2>
+                </div> -->
+            </div>
+        </div>
+            
+    <script src="script.js"></script>
+    </body>
 
-<body>
-	<img class="banner" src="banner.png">
-	<div class="buttons" id="buttons"></div>
-
-	<div class="footer">
-		Сервис работает в максимально тестовом режиме!<br>
-		Для предложения новых звуков, присылайте записи <a class="contact" href="https://t.me/loncydale">разработчикам</a>.
-	</div>
-
-	<script src="script.js"></script>
-</body>
 </html>
